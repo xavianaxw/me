@@ -1,0 +1,16 @@
+$mq-responsive: true;
+
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 1024px,
+    wide:    1200px,
+
+    // Tweakpoints
+    // desktopAd: 810px,
+    // mobileLandscape: 480px
+);
+
+$mq-static-breakpoint: desktop;
+
+// $mq-show-breakpoints: (mobile, tablet, desktop, wide);

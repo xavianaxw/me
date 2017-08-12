@@ -1,0 +1,18 @@
+// font-size | line-height | letter-spacing | text-transform (optional)
+
+$typographies: (
+  'body': (
+    'font-family': (overpass-mono, regular),
+    mobile: (16px, 26px, 1px),
+  ),
+  'post-title': (
+    'font-family': (oswald, bold),
+    mobile: (24px, 36px, 4px),
+    desktop: (18px, 26px, 4px),
+  ),
+  'post-meta': (
+    'font-family': (overpass-mono,  regular),
+    mobile: (14px, 18px, 1px),
+    desktop: (16px, 21px, 1.14px),
+  ),
+);

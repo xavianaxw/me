@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700|Overpass+Mono');
+
+$oswald: 'Oswald', sans-serif;
+$overpass-mono: 'Overpass Mono', sans-serif;
+
+// assign to $fonts map
+$fonts: (
+  'oswald': $oswald,
+  'overpass-mono': $overpass-mono,
+);
