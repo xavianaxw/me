@@ -4,8 +4,16 @@ module.exports = {
   fonts       : true,
   static      : true,
   svgSprite   : true,
-  ghPages     : true,
-  stylesheets : true,
+
+  ghPages     : {
+    cacheDir: '.dist', // prevent conflict with .public cacheDir (gulp-gh-pages)
+  },
+
+  stylesheets : {
+    autoprefixer: {
+      browsers: ['last 5 versions'],
+    },
+  },
 
   javascripts: {
     entry: {
@@ -27,4 +35,3 @@ module.exports = {
     rev: true
   }
 }
-
