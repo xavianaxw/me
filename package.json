@@ -6,6 +6,11 @@
   "author": "Xavian Ang <xavianaxw@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "blendid": "^4.2.0"
+    "blendid": "^4.2.0",
+    "inuitcss": "^6.0.0-beta.5"
+  },
+  "devDependencies": {
+    "stylelint": "^8.0.0",
+    "stylelint-scss": "^2.0.1"
   }
 }
