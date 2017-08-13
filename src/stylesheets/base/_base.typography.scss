@@ -9,6 +9,6 @@
   letter-spacing: 4px;
 }
 
-p {
+p, a, span {
   @include typography('body');
 }
