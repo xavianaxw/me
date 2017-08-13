@@ -26,6 +26,7 @@ $body-offset-desktop: 30px;
 .c-body__section--top-left {
   top: $body-offset-mobile;
   left: $body-offset-mobile;
+  z-index: map-get($z-index, 'top-of-overlay');
 
   @include mq($from: desktop) {
     top: $body-offset-desktop;
@@ -40,6 +41,7 @@ $body-offset-desktop: 30px;
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
+  z-index: map-get($z-index, 'top-of-overlay');
 
   @include mq($from: desktop) {
     top: $body-offset-desktop;
@@ -51,6 +53,7 @@ $body-offset-desktop: 30px;
   bottom: $body-offset-mobile;
   right: 50%;
   transform: translateX(50%);
+  z-index: map-get($z-index, 'top-of-overlay');
 
   @include mq($from: desktop) {
     bottom: $body-offset-desktop;
