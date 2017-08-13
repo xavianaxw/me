@@ -1,9 +1,0 @@
-// ==========================================================================||
-//  $typographies map defined in settings.typography
-// ==========================================================================||
-
-@each $typography-namespace, $typography in $typographies {
-  .u-#{$typography-namespace} {
-    @include typography($typography-namespace);
-  }
-}
