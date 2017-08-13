@@ -1,9 +1,21 @@
 // SETTINGS
 @import 'settings/settings.colors';
-@import 'settings/settings.config';
+@import 'settings/settings.inuit';
 @import 'inuitcss/settings/settings.core';
 @import 'settings/settings.breakpoints';
 @import 'settings/settings.fonts';
 @import 'settings/settings.globals';
 @import 'settings/settings.typography';
 @import 'settings/settings.z-index';
+
+// TOOLS
+@import 'inuitcss/tools/tools.font-size';
+@import 'inuitcss/tools/tools.clearfix';
+@import 'inuitcss/tools/tools.hidden';
+@import 'sass-mq/mq';
+@import 'tools/tools.font';
+@import 'tools/tools.typography';
+
+h1 {
+  @include typography('post-title');
+}
