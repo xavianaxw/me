@@ -5,6 +5,7 @@
   letter-spacing: 5px;
   margin-bottom: 10px;
   text-transform: uppercase;
+  width: 200px;
 }
 
 .c-socials__item {
@@ -12,6 +13,15 @@
   height: 21px;
   transition: $global-transition;
   width: 21px;
+  margin-right: 5px;
+
+  &:after {
+    display: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &:hover {
     opacity: 1;
