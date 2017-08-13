@@ -4,5 +4,11 @@
 }
 
 @include headings() {
-  font-size: 1.25rem;
+  @include font('oswald', 'bold');
+  @include inuit-font-size(24px, 36px);
+  letter-spacing: 4px;
+}
+
+p {
+  @include typography('body');
 }
