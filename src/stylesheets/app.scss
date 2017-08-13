@@ -15,7 +15,15 @@
 @import 'sass-mq/mq';
 @import 'tools/tools.font';
 @import 'tools/tools.typography';
+@import 'tools/tools.headings';
 
-h1 {
-  @include typography('post-title');
-}
+// GENERIC
+@import 'inuitcss/generic/generic.box-sizing';
+@import 'inuitcss/generic/generic.normalize';
+@import 'inuitcss/generic/generic.reset';
+@import 'inuitcss/generic/generic.shared';
+
+// BASE
+@import 'base/base.anchor';
+@import 'base/base.typography';
+@import 'base/base.sprite';

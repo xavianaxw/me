@@ -1,0 +1,8 @@
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@include headings() {
+  font-size: 1.25rem;
+}
