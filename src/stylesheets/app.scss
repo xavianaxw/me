@@ -27,8 +27,14 @@
 @import 'base/base.anchor';
 @import 'base/base.typography';
 @import 'base/base.sprite';
+@import 'base/base.page';
+
+// OBJECTS
+@import 'inuitcss/objects/objects.list-inline';
 
 // COMPONENTS
+@import 'components/components.body';
+@import 'components/components.socials';
 
 // UTILITIES
 // @import 'inuitcss/utilities/utilities.hide';
