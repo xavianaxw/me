@@ -1,0 +1,11 @@
+// ==========================================================================||
+//  $colors map is defined in settings.colors
+// ==========================================================================||
+
+@each $color-namespace, $color in $colors {
+  .u-bg-#{$color-namespace} {
+    // scss-lint:disable ImportantRule
+    background-color: $color !important;
+    // scss-lint:enable ImportantRule
+  }
+}
