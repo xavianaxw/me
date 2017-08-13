@@ -1,4 +1,5 @@
 * {
+  @include font('overpass-mono', 'regular');
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   color: $white;
