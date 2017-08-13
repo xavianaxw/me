@@ -65,6 +65,10 @@ $body-offset-desktop: 30px;
 .c-body__brand {
   display: block;
 
+  &:after {
+    display: none;
+  }
+
   img {
     width: auto;
     height: 60px;
