@@ -1,0 +1,47 @@
+$body-offset-mobile: 25px;
+$body-offset-desktop: 30px;
+
+.c-landing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  padding: 0 $inuit-global-spacing-unit;
+}
+
+.c-landing__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include mq($from:tablet) {
+    flex-wrap: nowrap;
+  }
+}
+
+.c-landing__brand {
+  display: block;
+
+  &:after {
+    display: none;
+  }
+
+  img {
+    width: auto;
+    height: 80px;
+
+    @include mq($from: desktop) {
+      width: auto;
+      height: 100px;
+    }
+  }
+}
+
+.c-landing__body {
+  span {
+    display: block;
+  }
+}
