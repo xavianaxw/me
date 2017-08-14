@@ -1,12 +1,10 @@
 .c-socials {
   margin-left: 0;
   margin-top: $inuit-global-spacing-unit;
-  flex: 0 0 100%;
 
   @include mq($from:tablet) {
     margin-left: $inuit-global-spacing-unit;
     margin-top: 0;
-    flex: 1;
   }
 }
 
