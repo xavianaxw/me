@@ -21,4 +21,10 @@ $typographies: (
       desktop: (16px, 21px, 1.14px),
     ),
   ),
+  'tiny': (
+    font: (overpass-mono, regular),
+    breakpoints: (
+      mobile: (12px, 12px, 1px),
+    ),
+  )
 );
