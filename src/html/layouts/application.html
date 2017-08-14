@@ -6,6 +6,7 @@
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <link rel="stylesheet" href="stylesheets/app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://xavianaxw.com" />
 
     <!-- realfavicongenerator.net -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -20,17 +21,23 @@
     <meta name="twitter:title" content="{{ title }}">
     <meta name="twitter:description" content="{{ description }}">
     <!-- Twitter Summary card images must be at least 120x120px -->
-    <meta property="twitter:image" content="https://xavianaxw.github.io/me/images/embed.jpg">
+    <meta property="twitter:image" content="https://xavianaxw.com/images/embed.jpg">
 
     <!-- Open Graph Data -->
     <meta property="og:title" content="{{ title }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content ="https://xavianaxw.com">
-    <meta property="og:image" content="https://xavianaxw.github.io/me/images/embed.jpg">
+    <meta property="og:image" content="https://xavianaxw.com/images/embed.jpg">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:site_name" content="Xavi Ang">
 
     {% include "shared/app-icons.html" %}
+
+    <script type="text/javascript">
+      var host = "xavianaxw.com";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
     {% block head %}{% endblock %}
   </head>
   <body class="c-body">
