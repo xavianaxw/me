@@ -1,10 +1,7 @@
-$body-offset-mobile: 25px;
-$body-offset-desktop: 30px;
-
 .c-body {
-  background-image: url('../images/bg.jpg');
+  background-color: $mine-shaft;
+  // background-image: url('../images/bg.png');
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center center;
 
   &:before {
@@ -15,87 +12,6 @@ $body-offset-desktop: 30px;
     right: 0;
     bottom: 0;
     z-index: map-get($z-index, 'body-overlay');
-    background-color: rgba($mine-shaft, 0.85);
-  }
-}
-
-.c-body__section {
-  position: fixed;
-}
-
-.c-body__section--top-left {
-  top: $body-offset-mobile;
-  left: $body-offset-mobile;
-  z-index: map-get($z-index, 'top-of-overlay');
-
-  @include mq($from: desktop) {
-    top: $body-offset-desktop;
-    left: $body-offset-desktop;
-  }
-}
-
-.c-body__section--top-right {
-  top: $body-offset-mobile;
-  right: $body-offset-mobile;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  align-items: center;
-  z-index: map-get($z-index, 'top-of-overlay');
-
-  @include mq($from: desktop) {
-    top: $body-offset-desktop;
-    right: $body-offset-desktop;
-  }
-}
-
-.c-body__section--bottom-right {
-  bottom: $body-offset-mobile;
-  right: 50%;
-  transform: translateX(50%);
-  z-index: map-get($z-index, 'top-of-overlay');
-
-  @include mq($from: desktop) {
-    bottom: $body-offset-desktop;
-    right: $body-offset-desktop;
-    transform: none;
-  }
-}
-
-.c-body__brand {
-  display: block;
-
-  &:after {
-    display: none;
-  }
-
-  img {
-    width: auto;
-    height: 60px;
-
-    @include mq($from: desktop) {
-      width: auto;
-      height: 110px;
-    }
-  }
-
-  .c-body__section--top-right & {
-    img {
-      width: auto;
-      height: 40px;
-
-      @include mq($from: desktop) {
-        width: auto;
-        height: 60px;
-      }
-    }
-  }
-}
-
-.c-body__content {
-  padding: 0 $body-offset-mobile;
-
-  @include mq($from: desktop) {
-    padding: 0 $body-offset-desktop;
+    background-color: rgba($mine-shaft, 0.69);
   }
 }
