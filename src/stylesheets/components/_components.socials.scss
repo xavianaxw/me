@@ -33,7 +33,7 @@
   height: 21px;
   transition: $global-transition;
   width: 21px;
-  margin-right: 5px;
+  margin-right: 10px;
 
   @include mq($from:tablet) {
     width: 25px;
